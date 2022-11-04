@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+/* Tampilan pada Header */
+#container{
+    size: 85%;
+    background-color: bisque;
+    padding: 20px;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../gambar/thrift1.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+/* Tampilan Navbar */
+.navigation{
+    width: 100%;
+    position: fixed;
+}
+
+.navigation #box-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation #box-navigation #boxes:nth-child(1){
+    /* color:rgb(0, 0, 0); */
+    font-size: 25px;
+}
+.navigation #box-navigation #boxes:nth-child(2) ul{
+    display: flex;
+}
+
+.navigation #box-navigation #boxes ul li{
+    font-size: 20px;
+    margin-left: 35px;
+    list-style-type: none;
+    
+}
+
+.navigation #box-navigation #boxes:nth-child(2) ul{
+    display: flex;
+}
+
+/* .navigation #box-navigation #boxes:nth-child(2) li a{
+    color: rgb(244, 6, 6);
+    text-decoration: none;
+} */
+
+.navigation #box-navigation #boxes:nth-child(2) li a:hover{
+    color: white;
+}
+
+#boxes li a{
+    color: black;
+    text-decoration: none;
+}
+
+#boxes ul li{
+    padding: 10px;
+}
+#boxes ul li #tomb{
+    padding: 5px;
+}
+
+
+input[type="checkbox"]{
+    margin-right: 10px;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #3664ff;
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+input[type="checkbox"]:checked::before{
+    transform: translateX(20px);
+}
+
+/* Tampian Tulisan di tengah Homepage */
+header .hero{
+    top: 50%;
+    right: 18%;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Mengatur Background dan Fitur pada bagian Class Products */
+.products {
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    background-color: #eddcd2;
+    text-align: center;
+
+}
+.products #judul{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+/* Untuk Menampilkan Products */
+.products .box-products{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mengatur Jarak dan Text pada Product yang Ditampilkan */
+.products .box-products .box1 {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 35px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Mengatur Bentuk Gambar Product */
+.products .box-products .box1 img{
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+/* Mengatur Section Address */
+.address{
+    width: 100%;
+    size: 75%;
+    align-items: center;
+    background-color: #eddcd2;;
+    text-align: center;
+
+}
+.address #box-address .box:nth-child(1){
+    padding-right: 20%;
+}
+
+.address #box-address .box:nth-child(1) h1{
+    font-size: 35px;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.address #box-address .box:nth-child(1) p{
+    font-size: 20px;
+    /* background-color: rgb(255, 255, 255); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.address #box-address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdf5e6;
+}
+
+.address #box-address .box img{
+    width: 65%;
+    margin-bottom: 25px;
+}
+
+/* Section Contact */
+.contact{
+    width: 100%;
+    text-align: center;
+    background-color: dimgray;
+}
+
+.contact .box-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contact .box-contact .box:nth-child(1) h1{
+    font-size: 45px;
+    color: white;
+    padding-right: 200px;
+}
+
+.contact .box-contact .box:nth-child(2) h1{
+    font-size: 55px;
+    color: white;
+}
+
+
+.contact .box-contact .box:nth-child(2) li{
+    font-size: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Section About Me */
+.about{
+    width: 100%;
+    background-color: #7895B2;
+    padding-bottom: 5%;
+}
+
+.about .box-about .box:nth-child(1) h1{
+    font-size: 45px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 5%;
+    margin-bottom: 20px;
+    font-family: "Poppins";
+}
+
+.about .box-about .box:nth-child(2) p{
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Membuat tampilan footer web */
+
+footer{
+    position: relative;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: "Montserrat";
+    font-size:20px;
+    font-style: bold;
+    background-color:#ffe3e1;
+}
+
+/* TAMPILAN PHP */
+.member{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.member b{
+    padding-top: 5cm;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.member .containerform{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5cm;
+}
+
+#tampilan{
+    text-align: center;
+    margin: auto;
+}
+
+#tampilan .b{
+    padding-top: 50cm;
+}
+
+/* #tampilantable{
+    text-align: center;
+    margin: auto;
+} */
+
+.containerform #buton{
+    text-align: center;
+}
+
+header1{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../gambar/thrift1.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+
+#formtable{
+    color: black;
+    border-radius: 25px;
+    background: bisque;
+    padding: 20px; 
+    width: 20cm;
+    height: 15cm;  
+    font-family: "Montserrat";
+    font-size: 25px;
+}
+
+#formtable .kotak{
+    padding: 7px 10px;
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#formtable .boks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 12px;
+    padding: 10px;
+}
+
+#formtable select{
+    width: 85%;
+    padding: 10px;
+}
+
+.containerform{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../gambar/thrift1.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+
+}
+
+#titleform{
+    background-color: dimgray;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../gambar/thrift1.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    font-size: 30px;
+}
+
+.butonsub{
+    color: white;
+}
+
+#judulmem{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 1cm;
+    background-image: url("../../logo/texture.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    color: black;
+}
+
+.boxmem{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 1cm;
+    background-image: url("../../logo/texture.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    color: black;
+}
+
+.boxmem{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3cm;
+    font-size: 15px;
+}
+
+#tampilanmem b{
+    font-size: 35px;
+    /* padding-bottom: ; */
+}
+
+#tampilanmem{
+    padding-top: 4cm;
+    padding-bottom: 4cm;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../gambar/thrift1.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    color: white;
+}
+
+#tampilantable{
+    text-align: center;
+    /* background-image: url("../../logo/texture.jpg"); */
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#table1{
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.containermem{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: dimgray;
+    color: white;
+
+}
+
+#hero2{
+    padding-top: 15%;
+    padding-bottom: 10%;
+    height: auto;
+    background-image: url("../../logo/texture.jpg");
+    background-size: cover;
+    font-size: 30px;
+    text-align: center;
+    background-repeat: none;
+}
+
+.box h1 a{
+    display: flex;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.box h1 a:hover{
+    color: white;
+}
+
+.form-control{
+    padding-right: 50px;
+    position:relative;
+}
+
+.form-outline{
+    padding-left: 33cm;
+}
