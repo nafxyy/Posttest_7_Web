@@ -21,9 +21,7 @@
 
         <label class = "kotak2" for="password"><b>Password</b></label>
         <input type="password" name="Password" required />
-        <?php if (isset($failed)) { ?>
-      <div id="bad-login">WRONG USERNAME or PASSWORD</div>
-    <?php } ?>
+        
         <input type="submit" class = "submit" name="userlogin" value="Login" />
         <label>
             <a href="registrasi.php" id="style2" data-replace="Admin Login?"><span>Belum Punya Akun?</span></a></p>
